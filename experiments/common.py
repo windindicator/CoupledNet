@@ -7,7 +7,7 @@ import jax.numpy as jnp
 import ml_collections
 from jax.tree_util import tree_leaves, tree_map
 
-from couplednet_minimal.samplers import UniformSampler
+from couplednet.samplers import UniformSampler
 
 jax.config.update("jax_default_matmul_precision", "highest")
 
@@ -44,7 +44,7 @@ def make_config(raw, arch_name, depth, seed):
     config.mode = "train"
     config.seed = int(seed)
     config.input_dim = 2
-    config.wandb = ml_collections.ConfigDict({"use": False, "project": "couplednet_minimal", "name": "local"})
+    config.wandb = ml_collections.ConfigDict({"use": False, "project": "couplednet", "name": "local"})
     config.arch = ml_collections.ConfigDict(arch)
     config.optim = ml_collections.ConfigDict(raw["optim"])
     config.training = ml_collections.ConfigDict({

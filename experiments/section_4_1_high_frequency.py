@@ -2,7 +2,7 @@ import argparse
 import functools
 from pathlib import Path
 
-from couplednet_minimal.pdes import FirstOrderPDE, high_frequency_solution
+from couplednet.pdes import FirstOrderPDE, high_frequency_solution
 from experiments.common import load_json_config, train_one
 
 

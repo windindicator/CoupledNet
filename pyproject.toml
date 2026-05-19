@@ -3,9 +3,9 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "couplednet-minimal"
+name = "couplednet"
 version = "0.1.0"
-description = "Minimal CoupledNet ICML experiment release"
+description = "CoupledNet ICML experiment release"
 requires-python = ">=3.9"
 dependencies = [
   "absl-py",
@@ -19,4 +19,4 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["couplednet_minimal*", "experiments*"]
+include = ["couplednet*", "experiments*"]

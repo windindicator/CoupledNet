@@ -1,7 +1,7 @@
 [
   {
     "depth": 4,
-    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_4L_best.json",
+    "config_file": "experiments/configs/section_4_1_couplednet/couplednet_4L_best.json",
     "warmup_steps": 2000,
     "source_result_file": "jaxpi/examples/toy/warmup_ablation_4L_w2000.json",
     "n_params": 76674,
@@ -14,7 +14,7 @@
   },
   {
     "depth": 8,
-    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_8L_best.json",
+    "config_file": "experiments/configs/section_4_1_couplednet/couplednet_8L_best.json",
     "warmup_steps": 0,
     "source_result_file": "depth_ablation_8L.json",
     "n_params": 144514,
@@ -27,7 +27,7 @@
   },
   {
     "depth": 16,
-    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_16L_best.json",
+    "config_file": "experiments/configs/section_4_1_couplednet/couplednet_16L_best.json",
     "warmup_steps": 2000,
     "source_result_file": "jaxpi/examples/toy/warmup_ablation_16L_w2000.json",
     "n_params": 280194,
@@ -40,7 +40,7 @@
   },
   {
     "depth": 24,
-    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_24L_best.json",
+    "config_file": "experiments/configs/section_4_1_couplednet/couplednet_24L_best.json",
     "warmup_steps": 0,
     "source_result_file": "depth_ablation_24L.json",
     "n_params": 415874,

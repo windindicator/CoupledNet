@@ -6,7 +6,7 @@ import sys
 if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from couplednet_minimal.pdes import FirstOrderPDE, high_dynamic_range_solution
+from couplednet.pdes import FirstOrderPDE, high_dynamic_range_solution
 from experiments.common import load_json_config, train_one
 
 

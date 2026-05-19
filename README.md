@@ -1,6 +1,6 @@
 # CoupledNet
 
-Minimal JAX implementation for the ICML 2026 paper **Deep Coupling Learning for Solving PDEs**.
+JAX implementation for the ICML 2026 paper **Deep Coupling Learning for Solving PDEs**.
 
 This repository contains the code needed to run the experiments from Sections 4.1 and 4.2.
 
@@ -17,7 +17,7 @@ For GPU runs, install the JAX/JAXLIB build matching your CUDA version before ins
 ## Repository Layout
 
 ```text
-couplednet_minimal/        Core model, PDE, sampler, and training utilities
+couplednet/        Core model, PDE, sampler, and training utilities
 experiments/               Experiment entry points
 experiments/configs/       Reproducible experiment configs
 experiments/records/       Search records retained for traceability

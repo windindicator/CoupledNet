@@ -3,8 +3,8 @@ from functools import partial
 import jax.numpy as jnp
 from jax import grad, jit, lax, vmap
 
-from couplednet_minimal.core import ForwardIVP
-from couplednet_minimal.utils import ntk_fn
+from couplednet.core import ForwardIVP
+from couplednet.utils import ntk_fn
 
 
 def high_frequency_solution(x, omega=30.0):

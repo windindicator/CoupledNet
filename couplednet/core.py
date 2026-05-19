@@ -10,8 +10,8 @@ from jax.tree_util import tree_map, tree_reduce, tree_leaves
 
 import optax
 
-from couplednet_minimal import archs
-from couplednet_minimal.utils import flatten_pytree
+from couplednet import archs
+from couplednet.utils import flatten_pytree
 
 
 class TrainState(train_state.TrainState):
