@@ -78,6 +78,19 @@ python -m experiments.section_4_1_high_frequency \
   --output-dir results/section_4_1_8L
 ```
 
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@inproceedings{meng2026deep,
+  title={Deep Coupling Learning for Solving PDEs},
+  author={Meng, Lingshi and Shi, Haosen and Pan, Sinno Jialin},
+  booktitle={Proceedings of the 43rd International Conference on Machine Learning},
+  year={2026}
+}
+```
+
 ## License
 
 This code is released under the MIT License.
