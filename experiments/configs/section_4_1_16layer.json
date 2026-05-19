@@ -1,0 +1,53 @@
+{
+  "experiment": "section_4_1_high_frequency_couplednet_depth_best",
+  "depth": 16,
+  "architectures": [
+    "CoupledMlp"
+  ],
+  "omega": 30.0,
+  "hidden_dim": 128,
+  "max_steps": 50000,
+  "batch_size_per_device": 1024,
+  "eval_grid_size": 200,
+  "eval_every_steps": 1000,
+  "arch": {
+    "activation": "tanh",
+    "periodicity": null,
+    "fourier_emb": {
+      "embed_scale": 4.0,
+      "embed_dim": 128
+    },
+    "reparam": {
+      "type": "weight_fact",
+      "mean": 0.5,
+      "stddev": 0.1
+    }
+  },
+  "optim": {
+    "optimizer": "Adam",
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.001,
+    "schedule": "cosine",
+    "cosine_decay_steps": 50000,
+    "cosine_alpha": 0.01,
+    "decay_rate": 0.9,
+    "decay_steps": 2000,
+    "staircase": false,
+    "grad_accum_steps": 0,
+    "warmup_steps": 2000
+  },
+  "weighting": {
+    "scheme": "none",
+    "init_weights": {
+      "ics": 1.0,
+      "res": 1.0
+    },
+    "momentum": 0.9,
+    "update_every_steps": 1000,
+    "use_causal": false,
+    "causal_tol": 1.0,
+    "num_chunks": 32
+  }
+}

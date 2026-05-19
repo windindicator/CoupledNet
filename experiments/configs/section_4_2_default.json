@@ -1,0 +1,74 @@
+{
+  "experiment": "section_4_2_high_dynamic_range",
+  "paper_reference": "Appendix G: no hyperparameter tuning, no NTK re-weighting, no Fourier features.",
+  "runs": [
+    {
+      "name": "couplednet_8L_lr1e-3",
+      "arch_name": "CoupledMlp",
+      "depth": 8,
+      "num_layers": 8,
+      "hidden_dim": 256,
+      "learning_rate": 0.001
+    },
+    {
+      "name": "couplednet_16L_lr1e-4",
+      "arch_name": "CoupledMlp",
+      "depth": 16,
+      "num_layers": 16,
+      "hidden_dim": 256,
+      "learning_rate": 0.0001
+    },
+    {
+      "name": "piratenet_9L_lr1e-3",
+      "arch_name": "PirateNet",
+      "depth": 9,
+      "num_layers": 3,
+      "hidden_dim": 256,
+      "learning_rate": 0.001
+    },
+    {
+      "name": "piratenet_18L_lr1e-3_appendix_extra",
+      "arch_name": "PirateNet",
+      "depth": 18,
+      "num_layers": 6,
+      "hidden_dim": 256,
+      "learning_rate": 0.001,
+      "appendix_note": "Appendix G reports an additional lr=1e-3 run because 18-layer PirateNet did not converge at lr=1e-4."
+    }
+  ],
+  "hidden_dim": 256,
+  "max_steps": 50000,
+  "batch_size_per_device": 512,
+  "eval_grid_size": 200,
+  "eval_every_steps": 1000,
+  "arch": {
+    "activation": "tanh",
+    "periodicity": null,
+    "fourier_emb": null,
+    "reparam": null,
+    "nonlinearity": 0.0,
+    "pi_init": null
+  },
+  "optim": {
+    "optimizer": "Adam",
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-8,
+    "learning_rate": 0.001,
+    "schedule": "exponential",
+    "decay_rate": 0.9,
+    "decay_steps": 2000,
+    "staircase": false,
+    "grad_accum_steps": 0,
+    "warmup_steps": 0
+  },
+  "weighting": {
+    "scheme": "none",
+    "init_weights": {"ics": 1.0, "res": 1.0},
+    "momentum": 0.9,
+    "update_every_steps": 1000,
+    "use_causal": false,
+    "causal_tol": 1.0,
+    "num_chunks": 32
+  }
+}

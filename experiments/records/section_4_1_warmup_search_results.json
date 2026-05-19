@@ -1,0 +1,110 @@
+[
+  {
+    "depth": 4,
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_4L.json",
+    "best_l2": 0.03388090431690216,
+    "final_l2": 0.038268670439720154,
+    "converge_step": 27300,
+    "ms_per_step": 2.8193926585558806
+  },
+  {
+    "depth": 4,
+    "warmup_steps": 1000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_4L_w1000.json",
+    "best_l2": 0.03052501752972603,
+    "final_l2": 0.03181516379117966,
+    "converge_step": 26300,
+    "ms_per_step": 2.9080763063393533
+  },
+  {
+    "depth": 4,
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_4L_w2000.json",
+    "best_l2": 0.01998506858944893,
+    "final_l2": 0.023062020540237427,
+    "converge_step": 19300,
+    "ms_per_step": 2.837712878212333
+  },
+  {
+    "depth": 8,
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_8L.json",
+    "best_l2": 0.01174482237547636,
+    "final_l2": 0.01174482237547636,
+    "converge_step": 17300,
+    "ms_per_step": 5.486406734881457
+  },
+  {
+    "depth": 8,
+    "warmup_steps": 1000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_8L_w1000.json",
+    "best_l2": 0.013486413285136223,
+    "final_l2": 0.013486413285136223,
+    "converge_step": 19200,
+    "ms_per_step": 5.515611094608904
+  },
+  {
+    "depth": 8,
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_8L_w2000.json",
+    "best_l2": 0.016458995640277863,
+    "final_l2": 0.016458995640277863,
+    "converge_step": 23500,
+    "ms_per_step": 5.487577785681933
+  },
+  {
+    "depth": 16,
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_16L.json",
+    "best_l2": 0.03538161516189575,
+    "final_l2": 0.03984299674630165,
+    "converge_step": 28400,
+    "ms_per_step": 11.070047594418282
+  },
+  {
+    "depth": 16,
+    "warmup_steps": 1000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_16L_w1000.json",
+    "best_l2": 0.019315043464303017,
+    "final_l2": 0.022634007036685944,
+    "converge_step": 31500,
+    "ms_per_step": 10.897057727109642
+  },
+  {
+    "depth": 16,
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_16L_w2000.json",
+    "best_l2": 0.01474078930914402,
+    "final_l2": 0.015115822665393353,
+    "converge_step": 26400,
+    "ms_per_step": 10.878361598160119
+  },
+  {
+    "depth": 24,
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_24L.json",
+    "best_l2": 0.011635242030024529,
+    "final_l2": 0.011744570918381214,
+    "converge_step": 20700,
+    "ms_per_step": 16.70724596220767
+  },
+  {
+    "depth": 24,
+    "warmup_steps": 1000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_24L_w1000.json",
+    "best_l2": 0.03794432058930397,
+    "final_l2": 0.0391368493437767,
+    "converge_step": 34900,
+    "ms_per_step": 16.910531213190406
+  },
+  {
+    "depth": 24,
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_24L_w2000.json",
+    "best_l2": 0.013784870505332947,
+    "final_l2": 0.013784870505332947,
+    "converge_step": 27900,
+    "ms_per_step": 16.958224447946996
+  }
+]

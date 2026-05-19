@@ -1,0 +1,54 @@
+[
+  {
+    "depth": 4,
+    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_4L_best.json",
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_4L_w2000.json",
+    "n_params": 76674,
+    "best_l2": 0.01998506858944893,
+    "final_l2": 0.023062020540237427,
+    "converge_step": 19300,
+    "converge_time": 54.800296479836106,
+    "ms_per_step": 2.837712878212333,
+    "total_train_time": 141.9
+  },
+  {
+    "depth": 8,
+    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_8L_best.json",
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_8L.json",
+    "n_params": 144514,
+    "best_l2": 0.01174482237547636,
+    "final_l2": 0.01174482237547636,
+    "converge_step": 17300,
+    "converge_time": 94.29135611408856,
+    "ms_per_step": 5.486406734881457,
+    "total_train_time": 274.3
+  },
+  {
+    "depth": 16,
+    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_16L_best.json",
+    "warmup_steps": 2000,
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_16L_w2000.json",
+    "n_params": 280194,
+    "best_l2": 0.01474078930914402,
+    "final_l2": 0.015115822665393353,
+    "converge_step": 26400,
+    "converge_time": 287.21693245880306,
+    "ms_per_step": 10.878361598160119,
+    "total_train_time": 543.9
+  },
+  {
+    "depth": 24,
+    "config_file": "icml_release_minimal/experiments/configs/section_4_1_couplednet/couplednet_24L_best.json",
+    "warmup_steps": 0,
+    "source_result_file": "depth_ablation_24L.json",
+    "n_params": 415874,
+    "best_l2": 0.011635242030024529,
+    "final_l2": 0.011744570918381214,
+    "converge_step": 20700,
+    "converge_time": 352.158313240041,
+    "ms_per_step": 16.70724596220767,
+    "total_train_time": 835.4
+  }
+]

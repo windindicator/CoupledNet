@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "couplednet-minimal"
+version = "0.1.0"
+description = "Minimal CoupledNet ICML experiment release"
+requires-python = ">=3.9"
+dependencies = [
+  "absl-py",
+  "flax",
+  "jax",
+  "jaxlib",
+  "ml-collections",
+  "numpy",
+  "optax",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["couplednet_minimal*", "experiments*"]

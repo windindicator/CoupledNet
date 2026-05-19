@@ -1,0 +1,7 @@
+absl-py
+flax
+jax
+jaxlib
+ml-collections
+numpy
+optax
