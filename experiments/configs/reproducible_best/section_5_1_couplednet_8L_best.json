@@ -1,6 +1,6 @@
 {
-  "experiment": "section_4_1_high_frequency_couplednet_depth_best",
-  "description": "Best CoupledNet config for this depth selected from the Section 4.1 warmup search.",
+  "experiment": "section_5_1_high_frequency_couplednet_depth_best",
+  "description": "Best CoupledNet config for this depth selected from the Section 5.1 warmup search.",
   "depth": 8,
   "architecture": "CoupledMlp",
   "seed": 42,

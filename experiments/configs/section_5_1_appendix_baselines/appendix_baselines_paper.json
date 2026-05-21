@@ -1,6 +1,6 @@
 {
-  "experiment": "section_4_1_high_frequency_appendix_baselines",
-  "description": "Single Appendix baseline configuration for Section 4.1: ModifiedMlp 4Lx256 and PirateNet 6Bx256.",
+  "experiment": "section_5_1_high_frequency_appendix_baselines",
+  "description": "Single Appendix baseline configuration for Section 5.1: ModifiedMlp 4Lx256 and PirateNet 6Bx256.",
   "depth": 0,
   "architectures": ["ModifiedMlp", "PirateNet"],
   "architecture_overrides": {

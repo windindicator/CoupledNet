@@ -7,11 +7,11 @@ from experiments.common import load_json_config, train_one
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Section 4.1 high-frequency first-order PDE.")
-    parser.add_argument("--config", default="experiments/configs/section_4_1_8layer.json")
+    parser = argparse.ArgumentParser(description="Section 5.1 high-frequency first-order PDE.")
+    parser.add_argument("--config", default="experiments/configs/section_5_1_8layer.json")
     parser.add_argument("--arch", choices=["CoupledMlp", "ModifiedMlp", "PirateNet"], default=None)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--output-dir", default="results/section_4_1")
+    parser.add_argument("--output-dir", default="results/section_5_1")
     args = parser.parse_args()
 
     raw = load_json_config(args.config)

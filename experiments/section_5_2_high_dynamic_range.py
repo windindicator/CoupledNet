@@ -11,12 +11,12 @@ from experiments.common import load_json_config, train_one
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Section 4.2 high-dynamic-range first-order PDE.")
-    parser.add_argument("--config", default="experiments/configs/section_4_2_default.json")
+    parser = argparse.ArgumentParser(description="Section 5.2 high-dynamic-range first-order PDE.")
+    parser.add_argument("--config", default="experiments/configs/section_5_2_default.json")
     parser.add_argument("--arch", choices=["CoupledMlp", "PirateNet"], default=None)
     parser.add_argument("--run", default=None, help="Optional run name from the config's runs list.")
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--output-dir", default="results/section_4_2")
+    parser.add_argument("--output-dir", default="results/section_5_2")
     args = parser.parse_args()
 
     raw = load_json_config(args.config)

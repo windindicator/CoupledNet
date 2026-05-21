@@ -1,5 +1,5 @@
 {
-  "experiment": "section_4_1_high_frequency_couplednet_depth_best",
+  "experiment": "section_5_1_high_frequency_couplednet_depth_best",
   "depth": 24,
   "architectures": [
     "CoupledMlp"

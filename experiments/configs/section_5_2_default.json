@@ -1,5 +1,5 @@
 {
-  "experiment": "section_4_2_high_dynamic_range",
+  "experiment": "section_5_2_high_dynamic_range",
   "paper_reference": "Appendix G: no hyperparameter tuning, no NTK re-weighting, no Fourier features.",
   "runs": [
     {

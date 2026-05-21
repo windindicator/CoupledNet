@@ -1,7 +1,7 @@
 {
-  "experiment": "section_4_1_high_frequency_couplednet_depth_best",
-  "description": "Best CoupledNet config for this depth selected from the Section 4.1 warmup search.",
-  "depth": 16,
+  "experiment": "section_5_1_high_frequency_couplednet_depth_best",
+  "description": "Best CoupledNet config for this depth selected from the Section 5.1 warmup search.",
+  "depth": 4,
   "architecture": "CoupledMlp",
   "seed": 42,
   "omega": 30.0,
@@ -13,7 +13,7 @@
   "eval_every_steps": 100,
   "arch": {
     "arch_name": "CoupledMlp",
-    "num_layers": 16,
+    "num_layers": 4,
     "hidden_dim": 128,
     "out_dim": 1,
     "activation": "tanh",
@@ -56,14 +56,14 @@
     "num_chunks": 32
   },
   "validated_result": {
-    "source_result_file": "jaxpi/examples/toy/warmup_ablation_16L_w2000.json",
-    "n_params": 280194,
-    "best_l2": 0.01474078930914402,
-    "final_l2": 0.015115822665393353,
-    "converge_step": 26400,
-    "converge_time": 287.21693245880306,
-    "ms_per_step": 10.878361598160119,
-    "total_train_time": 543.9
+    "source_result_file": "jaxpi/examples/toy/warmup_ablation_4L_w2000.json",
+    "n_params": 76674,
+    "best_l2": 0.01998506858944893,
+    "final_l2": 0.023062020540237427,
+    "converge_step": 19300,
+    "converge_time": 54.800296479836106,
+    "ms_per_step": 2.837712878212333,
+    "total_train_time": 141.9
   },
-  "run_command": "cd jaxpi/examples/toy && CUDA_VISIBLE_DEVICES=0 /home/user/miniconda3/envs/jax/bin/python -u run_warmup_ablation.py --depth 16 --warmup 2000 --gpu 0"
+  "run_command": "cd jaxpi/examples/toy && CUDA_VISIBLE_DEVICES=0 /home/user/miniconda3/envs/jax/bin/python -u run_warmup_ablation.py --depth 4 --warmup 2000 --gpu 0"
 }
