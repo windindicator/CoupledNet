@@ -14,6 +14,8 @@ pip install -e .
 
 For GPU runs, install the JAX/JAXLIB build matching your CUDA version before installing this package.
 
+Due to numerical precision and hardware differences, reproduced values may differ slightly from those reported in the paper; such small variations do not affect the experimental conclusions.
+
 ## Repository Layout
 
 ```text
