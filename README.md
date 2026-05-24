@@ -80,6 +80,10 @@ python -m experiments.section_5_1_high_frequency \
   --output-dir results/section_5_1_8L
 ```
 
+## JAX-PI Benchmarks
+
+Several additional benchmark experiments in the paper follow the benchmark structure from the [JAX-PI](https://github.com/PredictiveIntelligenceLab/jaxpi.git) project. The corresponding paper configs can be tested in a JAX-PI-style benchmark setup. We thank the JAX-PI authors for making their benchmark code available.
+
 ## Citation
 
 If you use this code, please cite:
